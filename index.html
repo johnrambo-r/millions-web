@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Millions Advisory | High-Impact Team Building</title>
+  
+  <link rel="icon" type="image/png" href="Millions-Logo.png">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            tealBrand: '#0EA5A4',
+            tealDark: '#088180',
+            slateDark: '#0F172A'
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    body { font-family: 'Inter', sans-serif; scroll-behavior: smooth; }
+    .section-padding { padding: 7rem 1.5rem; }
+    .glass-card { background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.1); }
+    .hide-scrollbar::-webkit-scrollbar { display: none; }
+    .hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+
+    #mobile-menu {
+      transition: transform 0.3s ease-in-out;
+      transform: translateX(100%);
+    }
+    #mobile-menu.open {
+      transform: translateX(0);
+    }
+  </style>
+</head>
+<body class="bg-white text-slate-800 antialiased overflow-x-hidden">
+
+  <nav class="sticky top-0 z-50 flex items-center justify-between px-8 py-5 bg-white/90 backdrop-blur-md border-b border-slate-100">
+    <a href="#" class="flex items-center gap-3">
+      <img src="Millions-Logo.png" alt="M" class="h-10 w-auto object-contain">
+      <span class="text-2xl font-extrabold text-slateDark tracking-tight uppercase">Millions<span class="text-tealDark">Advisory</span></span>
+    </a>
+
+    <div class="hidden md:flex gap-8 text-sm font-bold text-slate-600">
+      <a href="#services" class="hover:text-tealDark transition">Capabilities</a>
+      <a href="#industries" class="hover:text-tealDark transition">Sectors</a>
+      <a href="#outcomes" class="hover:text-tealDark transition">Outcomes</a>
+      <a href="#case-studies" class="hover:text-tealDark transition">Execution</a>
+      <a href="#contact-section" class="bg-tealDark text-white px-6 py-2 rounded-full hover:shadow-lg transition-all">Work With Us</a>
+    </div>
+
+    <button id="menu-btn" class="md:hidden text-slateDark focus:outline-none">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+      </svg>
+    </button>
+  </nav>
+
+  <div id="mobile-menu" class="fixed inset-0 z-[60] bg-slateDark flex flex-col items-center justify-center space-y-8 text-white text-2xl font-bold">
+    <button id="close-btn" class="absolute top-6 right-8 text-white">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+      </svg>
+    </button>
+    <a href="#services" class="mobile-link">Capabilities</a>
+    <a href="#industries" class="mobile-link">Sectors</a>
+    <a href="#outcomes" class="mobile-link">Outcomes</a>
+    <a href="#case-studies" class="mobile-link">Execution</a>
+    <a href="#contact-section" class="bg-tealDark px-8 py-3 rounded-full mobile-link text-lg">Work With Us</a>
+  </div>
+
+  <section class="bg-slateDark text-white pt-32 pb-24 px-8 border-b border-white/5">
+    <div class="max-w-7xl mx-auto text-center">
+      <span class="text-xs font-bold uppercase tracking-[0.2em] text-tealBrand mb-6 block">Partnering Since 2016</span>
+      <h1 class="text-5xl lg:text-7xl font-extrabold leading-[1.1] mb-8">Building <span class="text-tealBrand">High-Impact</span><br/>Teams in India</h1>
+      <p class="max-w-2xl mx-auto text-xl text-slate-400 mb-12">Strategic recruitment for Tech, MFG, BFSI, and Healthcare leaders.</p>
+      <div class="flex flex-col sm:flex-row justify-center gap-4">
+        <a href="#contact-section" class="bg-tealDark text-white px-8 py-4 rounded-xl font-bold shadow-2xl shadow-tealDark/40 hover:-translate-y-1 transition-all">Start Hiring</a>
+        <a href="#case-studies" class="border border-white/20 px-8 py-4 rounded-xl font-bold hover:bg-white/5 transition-all text-white">View Our Work</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="services" class="section-padding max-w-7xl mx-auto px-8">
+    <div class="grid md:grid-cols-2 gap-16 items-center">
+      <div>
+        <span class="text-tealBrand font-bold uppercase tracking-widest text-xs">Our Capabilities</span>
+        <h2 class="text-4xl font-bold mt-4 mb-6">Tailored Search for <br/>Strategic Growth</h2>
+        <p class="text-slate-500 mb-8 leading-relaxed">Whether you are setting up a green-field GCC or scaling volume ramp-up or strategic hiring, our approach is built on deep market intelligence.</p>
+      </div>
+      <div class="space-y-4">
+        <div class="p-6 bg-slate-50 rounded-2xl border-l-4 border-tealBrand">
+          <h4 class="font-bold text-lg text-slateDark">Leadership Hiring</h4>
+          <p class="text-sm text-slate-500">C-Suite and VP level mandates where business alignment is critical.</p>
+        </div>
+        <div class="p-6 bg-slate-50 rounded-2xl border-l-4 border-tealBrand">
+          <h4 class="font-bold text-lg text-slateDark">Permanent Staffing</h4>
+          <p class="text-sm text-slate-500">Subject matter experts and specialized technical contributors.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="industries" class="bg-slateDark py-28 px-8 text-white">
+    <div class="max-w-7xl mx-auto">
+      <div class="mb-16">
+        <h2 class="text-3xl font-bold">Market Footprint</h2>
+        <p class="text-slate-400 mt-2">Specialized hiring across core industries and organizational models.</p>
+      </div>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div class="border border-white/10 p-8 rounded-3xl bg-white/5 hover:bg-white/10 transition-all">
+          <h4 class="text-xl font-bold mb-3 text-tealBrand">Tech</h4>
+          <p class="text-sm text-slate-400 leading-relaxed italic">Partnering with Global Capability Centers, Product & Product Engineering Firms.</p>
+        </div>
+        <div class="border border-white/10 p-8 rounded-3xl bg-white/5 hover:bg-white/10 transition-all">
+          <h4 class="text-xl font-bold mb-3 text-tealBrand">MFG & Engg</h4>
+          <p class="text-sm text-slate-400 leading-relaxed italic">Supporting Industrial Leaders, Automotive Majors, and Engineering R&D Centers.</p>
+        </div>
+        <div class="border border-white/10 p-8 rounded-3xl bg-white/5 hover:bg-white/10 transition-all">
+          <h4 class="text-xl font-bold mb-3 text-tealBrand">BFSI</h4>
+          <p class="text-sm text-slate-400 leading-relaxed italic">Focused on Fintech Innovators, Digital Banking Units, and Banking Support Centers.</p>
+        </div>
+        <div class="border border-white/10 p-8 rounded-3xl bg-white/5 hover:bg-white/10 transition-all">
+          <h4 class="text-xl font-bold mb-3 text-tealBrand">Healthcare</h4>
+          <p class="text-sm text-slate-400 leading-relaxed italic">Enabling MedTech Product Firms, Pharma R&D Hubs, and Healthcare IT Services.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="outcomes" class="section-padding max-w-7xl mx-auto px-8 border-t border-slate-50">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12 text-center md:text-left">
+      <div>
+        <div class="text-5xl font-extrabold text-tealBrand mb-2">5:1</div>
+        <p class="text-sm font-bold text-slateDark uppercase tracking-widest mb-3">Interview to Offer</p>
+        <p class="text-xs text-slate-400 leading-relaxed italic">High-precision shortlisting to protect your leadership and engineering bandwidth.</p>
+      </div>
+      <div>
+        <div class="text-5xl font-extrabold text-tealBrand mb-2">85%</div>
+        <p class="text-sm font-bold text-slateDark uppercase tracking-widest mb-3">Join Conversion</p>
+        <p class="text-xs text-slate-400 leading-relaxed italic">Structured engagement and negotiation to mitigate offer-shopping and drop-outs.</p>
+      </div>
+      <div>
+        <div class="text-5xl font-extrabold text-tealBrand mb-2">75%</div>
+        <p class="text-sm font-bold text-slateDark uppercase tracking-widest mb-3">Client Retention</p>
+        <p class="text-xs text-slate-400 leading-relaxed italic">Proof of alignment; three out of four partners engage us for recurring mandates.</p>
+      </div>
+      <div>
+        <div class="text-5xl font-extrabold text-tealBrand mb-2">14d</div>
+        <p class="text-sm font-bold text-slateDark uppercase tracking-widest mb-3">Niche Turnaround</p>
+        <p class="text-xs text-slate-400 leading-relaxed italic">Market-mapping efficiency for critical roles that standard sourcing often misses.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="case-studies" class="bg-slateDark py-32 overflow-hidden">
+    <div class="max-w-7xl mx-auto px-8 mb-16">
+      <h2 class="text-4xl font-bold text-white mb-4">Execution Stories</h2>
+      <p class="text-slate-400">A look at the specific technical and market hurdles we resolve for our partners.</p>
+    </div>
+    
+    <div class="flex gap-8 overflow-x-auto px-8 pb-12 hide-scrollbar snap-x">
+      <div class="min-w-[320px] md:min-w-[500px] snap-center glass-card p-10 rounded-[2.5rem] flex flex-col justify-between">
+        <div>
+          <span class="bg-tealBrand/10 text-tealBrand px-3 py-1 rounded-full text-[10px] font-bold uppercase mb-6 inline-block">The Calibration Fix</span>
+          <h4 class="text-2xl font-bold text-white mb-6 leading-tight">Closing a <span class="text-tealBrand">180-Day</span> Leadership Deadlock</h4>
+          <div class="space-y-4">
+            <div>
+              <p class="text-[10px] uppercase text-slate-500 font-bold mb-1">The Friction</p>
+              <p class="text-sm text-slate-300 italic leading-relaxed">A Principal Data Science role left open for 6 months due to a mismatch in technical calibration.</p>
+            </div>
+            <div>
+              <p class="text-[10px] uppercase text-slate-500 font-bold mb-1">The Strategy</p>
+              <p class="text-sm text-slate-300 leading-relaxed">Shifted from volume-sourcing to mapping passive talent within three specific product R&D competitors.</p>
+            </div>
+          </div>
+        </div>
+        <div class="mt-8 pt-6 border-t border-white/10 text-xl font-bold text-tealBrand">Hired in 14 Days</div>
+      </div>
+
+      <div class="min-w-[320px] md:min-w-[500px] snap-center glass-card p-10 rounded-[2.5rem] flex flex-col justify-between">
+        <div>
+          <span class="bg-tealBrand/10 text-tealBrand px-3 py-1 rounded-full text-[10px] font-bold uppercase mb-6 inline-block">Process Engine</span>
+          <h4 class="text-2xl font-bold text-white mb-6 leading-tight">Scaling a <span class="text-tealBrand">Fintech Core</span> to 300+</h4>
+          <div class="space-y-4">
+            <div>
+              <p class="text-[10px] uppercase text-slate-500 font-bold mb-1">The Friction</p>
+              <p class="text-sm text-slate-300 italic leading-relaxed">Building an engineering vertical from zero while managing high "offer-dropout" risks in the local market.</p>
+            </div>
+            <div>
+              <p class="text-[10px] uppercase text-slate-500 font-bold mb-1">The Strategy</p>
+              <p class="text-sm text-slate-300 leading-relaxed">Embedded a dedicated consultant model to manage end-to-end pipeline and pre-joining candidate engagement.</p>
+            </div>
+          </div>
+        </div>
+        <div class="mt-8 pt-6 border-t border-white/10 text-xl font-bold text-tealBrand">92% Join Conversion</div>
+      </div>
+
+      <div class="min-w-[320px] md:min-w-[500px] snap-center glass-card p-10 rounded-[2.5rem] flex flex-col justify-between">
+        <div>
+          <span class="bg-tealBrand/10 text-tealBrand px-3 py-1 rounded-full text-[10px] font-bold uppercase mb-6 inline-block">Cultural Bridge</span>
+          <h4 class="text-2xl font-bold text-white mb-6 leading-tight">Establishing a <span class="text-tealBrand">New GCC Core</span></h4>
+          <div class="space-y-4">
+            <div>
+              <p class="text-[10px] uppercase text-slate-500 font-bold mb-1">The Friction</p>
+              <p class="text-sm text-slate-300 italic leading-relaxed">Finding SAP/ServiceNow specialists capable of direct collaboration with a European Global HQ.</p>
+            </div>
+            <div>
+              <p class="text-[10px] uppercase text-slate-500 font-bold mb-1">The Strategy</p>
+              <p class="text-sm text-slate-300 leading-relaxed">Screened specifically for "Global Mindset" and long-term stability within the Chennai technology corridor.</p>
+            </div>
+          </div>
+        </div>
+        <div class="mt-8 pt-6 border-t border-white/10 text-xl font-bold text-tealBrand">Zero Attrition (Year 1)</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-slate-50 border-y border-slate-100 py-20">
+    <div class="max-w-7xl mx-auto px-8">
+      <div class="mb-12">
+        <h2 class="text-3xl font-bold text-slateDark">The Candidate Experience</h2>
+        <p class="text-tealBrand font-semibold mt-1">4.8★ Rating • Based on ~300 Google Reviews</p>
+      </div>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="bg-white p-8 rounded-2xl border border-slate-200 shadow-sm flex flex-col justify-between">
+          <p class="text-slate-600 text-sm leading-relaxed mb-6 italic">"Millions Advisory is tied up with Fortune 500 MNC clients. The whole interview and joining process was hassle-free. I liked their follow-ups on every level."</p>
+          <div><p class="font-bold text-slateDark text-sm">DevOps Engineer</p><p class="text-xs text-slate-400">Fintech Major</p></div>
+        </div>
+        <div class="bg-white p-8 rounded-2xl border border-slate-200 shadow-sm flex flex-col justify-between">
+          <p class="text-slate-600 text-sm leading-relaxed mb-6 italic">"Their dedication to helping candidates transition into new domains is truly commendable. They provided clear communication and timely updates."</p>
+          <div><p class="font-bold text-slateDark text-sm">Full Stack Engineer</p><p class="text-xs text-slate-400">Global Product Company</p></div>
+        </div>
+        <div class="bg-white p-8 rounded-2xl border border-slate-200 shadow-sm flex flex-col justify-between">
+          <p class="text-slate-600 text-sm leading-relaxed mb-6 italic">"Extremely supportive in each and every step. I had interaction with various HR services, but this team is uniquely supportive through the hiring process."</p>
+          <div><p class="font-bold text-slateDark text-sm">Process Engineer</p><p class="text-xs text-slate-400">Nano GCC</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact-section" class="section-padding max-w-7xl mx-auto px-8">
+    <div class="grid md:grid-cols-2 gap-20 items-start">
+      <div>
+        <h2 class="text-3xl font-bold mb-8 text-slateDark">Our Office</h2>
+        <div class="space-y-6">
+          <div class="p-8 bg-slate-50 rounded-[2.5rem] border border-slate-100">
+            <h4 class="font-bold text-tealDark uppercase text-xs tracking-widest mb-4">Chennai Headquarters</h4>
+            <p class="text-lg font-semibold text-slateDark leading-relaxed">
+              Millions Advisory LLP,<br>
+              G1, #4/608, D-444,<br>
+              V.O.C Street, Kottivakkam,<br>
+              Perungudi, OMR, Chennai,<br>
+              Tamil Nadu - 600 041.
+            </p>
+          </div>
+          <p class="text-sm text-slate-400 px-4">Our specialized consultants support Tech, BFSI, and Industrial hiring across India's core hubs.</p>
+        </div>
+      </div>
+
+      <div id="contact" class="bg-slate-50 p-10 rounded-[3rem] border border-slate-200 shadow-xl shadow-slate-200/50">
+        <h3 class="text-2xl font-bold mb-6 text-slateDark">Let's Build Your Team</h3>
+        <form action="https://formspree.io/f/hello@millionsadvisory.com" method="POST" class="space-y-4">
+          <input type="text" name="name" required placeholder="Full Name" class="w-full p-4 rounded-xl border-slate-200 focus:ring-2 focus:ring-tealDark outline-none" />
+          <input type="email" name="email" required placeholder="Business Email" class="w-full p-4 rounded-xl border-slate-200 focus:ring-2 focus:ring-tealDark outline-none" />
+          <textarea name="message" required placeholder="Tell us about your requirements" class="w-full p-4 rounded-xl border-slate-200 focus:ring-2 focus:ring-tealDark outline-none" rows="4"></textarea>
+          <button type="submit" class="w-full bg-tealDark text-white py-4 rounded-xl font-bold text-lg hover:shadow-2xl transition-all">Send Inquiry</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer class="py-12 border-t border-slate-100 text-center text-sm text-slate-400">
+    © 2026 Millions Advisory | www.millionsadvisory.com
+  </footer>
+
+  <script>
+    const menuBtn = document.getElementById('menu-btn');
+    const closeBtn = document.getElementById('close-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const mobileLinks = document.querySelectorAll('.mobile-link');
+
+    const toggleMenu = () => mobileMenu.classList.toggle('open');
+    menuBtn.addEventListener('click', toggleMenu);
+    closeBtn.addEventListener('click', toggleMenu);
+    mobileLinks.forEach(link => link.addEventListener('click', toggleMenu));
+  </script>
+
+</body>
+</html>
